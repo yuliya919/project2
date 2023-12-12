@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #777777;
+  letter-spacing: 2px;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.container {
+  background-color: #F7F7F7;
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../header/header.jpg) center/cover no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 78%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 0 78%);
+}
+.header__logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 40px;
+  width: 56px;
+}
+.header__box {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 25%;
+}
+
+.title-first {
+  color: #fff;
+}
+.title-first__one {
+  display: block;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 10px;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  animation-name: leftright;
+  animation-duration: 3s;
+}
+.title-first__second {
+  display: block;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 5px;
+  font-size: 35px;
+  left: 50%;
+  animation-name: leftright;
+  animation-duration: 3s;
+  margin-bottom: 65px;
+}
+
+.link:link, .link:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777777;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px 40px;
+  background-color: white;
+  letter-spacing: 5px;
+  border-radius: 50px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.link:hover {
+  transform: translateY(-3px);
+}
+.link:active {
+  transform: translateY(-2px);
+}
+
+@keyframes leftright {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
